@@ -30,7 +30,7 @@ var url = '';
 var services = appEnv.getServices();
 for (var service in services){
 	if (services[service].tags.indexOf('solace-pubsub')> -1){
-		url = services[service].credentials.restUris[0];
+		url = services[service].credentials.webMessagingUris[0];
 		var  clientUsername = services[service].credentials.clientUsername;
 	    var  clientPassword = services[service].credentials.clientPassword;
 	    var  management_host = services[service].credentials.activeManagementHostname;
