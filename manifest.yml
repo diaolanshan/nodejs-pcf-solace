@@ -1,0 +1,5 @@
+---
+applications:
+- name: nodejs-pcf-solace
+  command: node app.js
+  buildpack: nodejs_buildpack
